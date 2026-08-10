@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personligt note- og dokumentarkiv for Christoffer Auxo.">
+  <title>Christoffer Auxo — Notearkiv</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" href="index.html">Christoffer <span>Auxo</span></a>
+
+    <div class="sidebar-label">Arkiv</div>
+    <nav class="nav">
+      <a class="active" href="index.html">Alle noter</a>
+      <a href="notes/seo-noter.html">SEO</a>
+      <a href="notes/google-ads.html">Google Ads</a>
+      <a href="notes/tracking.html">Tracking</a>
+      <a href="notes/teknik.html">Teknik</a>
+    </nav>
+
+    <div class="sidebar-label">Genveje</div>
+    <nav class="nav">
+      <a href="#seneste">Seneste noter</a>
+      <a href="#saadan-tilfoejer-du">Tilføj ny note</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <div class="container">
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">Personligt arkiv</p>
+          <h1>Noter & dokumenter</h1>
+          <p class="lead">Et simpelt, statisk arkiv hvor hver note har sin egen HTML-side, og hvor du kan navigere frem og tilbage mellem emnerne.</p>
+        </div>
+        <input class="search" type="search" placeholder="Søgning kan tilføjes senere" disabled>
+      </div>
+
+      <section id="seneste">
+        <div class="grid">
+          <a class="card" href="notes/seo-noter.html">
+            <span class="tag">SEO</span>
+            <h2>SEO-noter</h2>
+            <p>Keyword research, teknisk SEO, structured data, interne links og løbende observationer.</p>
+            <span class="date">Senest opdateret: 10. august 2026</span>
+          </a>
+
+          <a class="card" href="notes/google-ads.html">
+            <span class="tag">Google Ads</span>
+            <h2>Google Ads</h2>
+            <p>Kampagnestruktur, Shopping, PMax, ProfitMetrics og performance-noter.</p>
+            <span class="date">Senest opdateret: 10. august 2026</span>
+          </a>
+
+          <a class="card" href="notes/tracking.html">
+            <span class="tag">Tracking</span>
+            <h2>Tracking & analytics</h2>
+            <p>GTM, GA4, dataLayer, Klaviyo-events, Looker Studio og konverteringsmåling.</p>
+            <span class="date">Senest opdateret: 10. august 2026</span>
+          </a>
+
+          <a class="card" href="notes/teknik.html">
+            <span class="tag">Teknik</span>
+            <h2>Tekniske noter</h2>
+            <p>WordPress, scripts, DNS, redirects, HTML/CSS og andre tekniske løsninger.</p>
+            <span class="date">Senest opdateret: 10. august 2026</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="help-box" id="saadan-tilfoejer-du">
+        <h3>Sådan tilføjer du en ny note</h3>
+        <p>Kopiér en eksisterende fil i <code>/notes/</code>, omdøb den, ændr titel og indhold, og tilføj et nyt kort her på forsiden. Nederst på hver note kan du ændre “Forrige” og “Næste”, så du kan bladre mellem dokumenterne.</p>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
