@@ -1,55 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>My Website</title>
-
-  <meta
-    name="description"
-    content="Welcome to my personal website."
-  >
-
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsiv hjemmeside bygget med HTML og CSS Flexbox.">
+  <title>Nordic Studio | Moderne digitale løsninger</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="/">My Website</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Nordic Studio forside">Nordic<span>Studio</span></a>
+
+      <nav class="main-nav" aria-label="Primær navigation">
+        <a href="#services">Services</a>
+        <a href="#about">Om os</a>
+        <a href="#cases">Cases</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="button button-small">Få et tilbud</a>
+    </div>
   </header>
 
   <main>
+
     <section class="hero">
-      <h1>Welcome to my website</h1>
-      <p>This website is hosted using GitHub Pages.</p>
-      <a class="button" href="#about">Learn more</a>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Strategi · Design · Udvikling</p>
+          <h1>Digitale løsninger, der skaber reel forretningsværdi</h1>
+          <p class="hero-text">
+            Vi hjælper virksomheder med at bygge hurtige, brugervenlige og konverterende websites
+            med fokus på design, performance og synlighed.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="button">Start et projekt</a>
+            <a href="#services" class="text-link">Se vores services →</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>120+</strong>
+              <span>projekter leveret</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>kundetilfredshed</span>
+            </div>
+            <div>
+              <strong>8 år</strong>
+              <span>digital erfaring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup">
+            <div class="mockup-label">Din næste hjemmeside</div>
+            <h2>Ren. Hurtig. Effektiv.</h2>
+            <p>Bygget til både mennesker og søgemaskiner.</p>
+            <div class="mockup-boxes">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About me</h2>
-      <p>
-        Write something here about yourself, your company,
-        or your project.
-      </p>
+    <section class="trust">
+      <div class="container trust-inner">
+        <span>Valgt af ambitiøse virksomheder</span>
+        <div class="logos">
+          <strong>NOVA</strong>
+          <strong>ARCTIC</strong>
+          <strong>FORM</strong>
+          <strong>LEVEL</strong>
+          <strong>AXIS</strong>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: hello@example.com</p>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Vores services</p>
+            <h2>Alt du behøver for at stå stærkt digitalt</h2>
+          </div>
+          <p>
+            Fra den første idé til en færdig løsning arbejder vi strategisk med både design,
+            udvikling og synlighed.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
+            <h3>Webdesign</h3>
+            <p>Moderne, responsive layouts med fokus på brugeroplevelse og konvertering.</p>
+            <a href="#contact">Læs mere →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02</div>
+            <h3>Webudvikling</h3>
+            <p>Hurtige og stabile løsninger bygget med ren kode og fleksibel struktur.</p>
+            <a href="#contact">Læs mere →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03</div>
+            <h3>SEO</h3>
+            <p>Teknisk SEO, content og struktur, der gør det lettere at blive fundet i Google.</p>
+            <a href="#contact">Læs mere →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04</div>
+            <h3>Performance</h3>
+            <p>Optimering af hastighed, Core Web Vitals og den samlede tekniske oplevelse.</p>
+            <a href="#contact">Læs mere →</a>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <section class="section section-dark" id="about">
+      <div class="container split-layout">
+        <div class="split-copy">
+          <p class="eyebrow">Om os</p>
+          <h2>Vi kombinerer strategi og godt håndværk</h2>
+          <p>
+            Et godt website skal ikke bare se godt ud. Det skal være nemt at bruge, hurtigt at
+            indlæse og understøtte dine forretningsmål.
+          </p>
+          <p>
+            Derfor arbejder vi med hele oplevelsen — fra informationsarkitektur og design til
+            udvikling, SEO og løbende optimering.
+          </p>
+          <a href="#contact" class="button button-light">Tal med os</a>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span>✓</span>
+            <div>
+              <h3>Responsivt fra start</h3>
+              <p>Alle layouts fungerer på mobil, tablet og desktop.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>✓</span>
+            <div>
+              <h3>SEO-venlig struktur</h3>
+              <p>Semantisk HTML, god intern struktur og teknisk fundament.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>✓</span>
+            <div>
+              <h3>Fokus på performance</h3>
+              <p>Minimal kode og ingen unødvendige dependencies.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <span>✓</span>
+            <div>
+              <h3>Let at videreudvikle</h3>
+              <p>En overskuelig CSS-struktur der er nem at tilpasse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Udvalgte cases</p>
+            <h2>Designet til at skabe resultater</h2>
+          </div>
+          <p>
+            Eksempler på løsninger med fokus på tydelig kommunikation, stærk branding og
+            konvertering.
+          </p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card case-large">
+            <div class="case-visual">
+              <span>Case 01</span>
+            </div>
+            <div class="case-content">
+              <p class="case-category">E-commerce</p>
+              <h3>Nordic Supply</h3>
+              <p>Ny webshopstruktur med fokus på produktnavigation og organisk synlighed.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-visual visual-alt">
+              <span>Case 02</span>
+            </div>
+            <div class="case-content">
+              <p class="case-category">B2B</p>
+              <h3>Axis Consulting</h3>
+              <p>Nyt corporate website med skarpere positionering og leadgenerering.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-visual visual-third">
+              <span>Case 03</span>
+            </div>
+            <div class="case-content">
+              <p class="case-category">SaaS</p>
+              <h3>Flow Systems</h3>
+              <p>Produktwebsite med tydelig informationsarkitektur og bedre onboarding.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Har du et projekt i tankerne?</h2>
+          <p>
+            Fortæl kort om dit projekt, så vender vi tilbage med et forslag til næste skridt.
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:hello@nordicstudio.dk">hello@nordicstudio.dk</a>
+            <a href="tel:+4512345678">+45 12 34 56 78</a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <label>
+              Navn
+              <input type="text" name="name" placeholder="Dit navn">
+            </label>
+
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="din@email.dk">
+            </label>
+          </div>
+
+          <label>
+            Virksomhed
+            <input type="text" name="company" placeholder="Virksomhedsnavn">
+          </label>
+
+          <label>
+            Besked
+            <textarea name="message" rows="6" placeholder="Fortæl lidt om projektet"></textarea>
+          </label>
+
+          <button class="button" type="submit">Send forespørgsel</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 My Website</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="logo footer-logo">Nordic<span>Studio</span></a>
+        <p>Digitale løsninger med fokus på design, performance og vækst.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">Om os</a>
+        <a href="#cases">Cases</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+
+      <div class="footer-meta">
+        <span>CVR: 12345678</span>
+        <span>© 2026 Nordic Studio</span>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
